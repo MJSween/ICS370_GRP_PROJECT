@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <?php
+    include('login.php');
+    if(isset($_SESSION['login_user'])){
+    header("location: index.html"); 
+    }
+<html>
+  <head>
+<title>Welcome</title>
+<br><br><br><br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<link rel="stylesheet" href="HomeStyle/homestyle.css">	
+	<style>
+	#logobar {
+		margin-top: 3px;
+		margin-right: 4px;
+		float: right;
+	}
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:auto;
+		width: 70%;
+		border: 2px solid;
+	}
+	#photo {
+		width: 200px; 
+		height: 125px;
+	}
+		.paragraph {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+		
+	}
+	.backbutton{
+	float: left;
+	width: 10%;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	}
+	</style>
+  </head>
+
+  <body>
+  <h1><center>Mercer of Montana</center></h1>
+  	<center><p style="float: none;"> Welcome to your one-stop shop for all things phytoplankton. Whether you are just getting started, 
+	or a seasoned vet, we can meet all of your phytoplankton needs.</p></center>
+  <img class="center" src="Phytoplankton_1200px.jpg" style="width:600px;height:400px;"></img>
+
+    <div class="navbar">
+		<a href="home.html" class="active">Home</a>
+		<a href="aboutHome.html">About Us</a>
+		<a href="productsHome.html">Products</a>
+		<a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+		<a href="signup.html">Sign Up</a>
+		<img id="logobar" src="MMLOGOWASH.png" style="width:120px;height:60px;"></img>
+	</div>
+	<br><br>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="index.html">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img id="photo" src="MMLOGOWASH.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="user_id"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="user_id" required>
+
+      <label for="user_pwd"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="user_pwd" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+  <form action="employee_login.php"></form>
+  <div class="employee_login">
+    <button type="button" onclick="window.location.href='employee_login.php'">Employee Portal</button>
+  </div>
+  </form>
+
+<button class="backbutton" onclick="history.back()">Back</button>
+  </body>
+</html>

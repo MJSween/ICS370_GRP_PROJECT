@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Our Products</title>
+<br><br><br><br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<link rel="stylesheet" href="HomeStyle/homestyle.css">	
+	<style>
+	#logobar {
+		margin-top: 3px;
+		margin-right: 4px;
+		float: right;
+	}
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 4px;
+		width: 70%;
+		border: 2px solid;
+	}
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		background-color: white;
+		padding: 10px;
+	}
+	.grid-item {
+	    background-color: white;
+	    border: 1px solid green;
+	    padding: 20px;
+	    font-size: 30px;
+	    text-align: center;
+	}
+	.backbutton{
+		float: left;
+		width: 10%;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+	</style>
+  </head>
+  
+  <body id="logo" background=null>
+  <br>
+
+
+    <div class="navbar">
+		<a href="home.html">Home</a>
+		<a href="aboutHome.html">About Us</a>
+		<a href="productsHome.html" class="active">Products</a>
+		<a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+		<a href="signup.html">Sign Up</a>
+		<img id="logobar"src="MMLOGOWASH.png" style="width:120px;height:60px;"></img>
+	</div>
+	
+	<br>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="MMLOGOWASH.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<div class="grid-container">
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/NannoDisk.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Nanno Disk</span>
+			<a href="nannodiskhome.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$18.50<h5></span>
+			
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/TetraDisk.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Tetra Disk</span>
+			<a href="tetradiskhome.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$21.99<h5></span>
+			
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/HAF_4OZ.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Hydro Algal Filter f/2 4oz</span>
+			<a href="hydrofilterf2_4home.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$11.88<h5></span>
+
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/HAF_4OZ.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Hydro Algal Filter f/2 8oz</span>
+			<a href="hydrofilterf2_8home.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$14.50<h5></span>
+			
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/HAF_4OZ.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Hydro Algal Filter f/2 16oz</span>
+			<a href="hydrofilterf2_16home.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$20.75<h5></span>
+			
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/HAF_4OZ.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Hydro Algal Filter f/2 32oz</span>
+			<a href="hydrofilterf2_32home.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$38.25<h5></span>
+		
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/LiveMarinePhyto_8oz.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Live Marine Phytoplankton 8oz</span>
+			<a href="livephytonanno_8home.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$11.88<h5></span>
+			
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/LiveMarinePhyto_8oz.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Live Marine Phytoplankton 16oz</span>
+			<a href="livephytonanno_16home.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$21.00<h5></span>
+			
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/LiveMarinePhyto_liter.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Live Marine Phytoplankton Liter</span>
+			<a href="livephytonanno_literhome.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$23.75<h5></span>
+			
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/PhytoplanktonCultureKit.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Phytoplankton Culture Kit Nannochloropsis</span>
+			<a href="nanno_kithome.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$21.25<h5></span>
+			
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/PhytoplanktonCultureKitTetra.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Phytoplankton Culture Kit Tetraslemis</span>
+			<a href="tetra_kithome.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$22.50<h5></span>
+			
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/ZooplanktonSieve_2in.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Zooplankton Sieve 2in</span>
+			<a href="sieve_2home.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$11.50<h5></span>
+			
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/ZooplanktonSieve_4in.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Zooplankton Sieve 4in</span>
+			<a href="sieve_4home.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$16.50<h5></span>
+			
+		</div>
+		
+	</div>
+<button class="backbutton" onclick="history.back()">Back</button>
+  </body>
+</html>

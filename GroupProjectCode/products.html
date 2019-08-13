@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Products</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="ProductStyle/productstyle.css">
+<style>
+	#logobar {
+		margin-top: 3px;
+		margin-right: 4px;
+		float: right;
+	}
+	.grid-container {
+	  display: grid;
+	  grid-template-columns: auto auto auto auto;
+	  background-color: white;
+	  padding: 10px;
+	}
+	.grid-item {
+	  background-color: white;
+	  border: 1px solid green;
+	  padding: 20px;
+	  font-size: 30px;
+	  text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div class="navbar">
+		<a href="index.html">Home</a>
+		<a href="about.html">About Us</a>
+		<a href="products.html" class="active">Products</a>
+		<a href="cart.html">Cart</a>
+		<a href="links.html">Links</a>
+		<a href="logout.html">Logout</a>
+		<img id="logobar" src="MMLOGOWASH.png" style="width:120px;height:60px;"></img>
+	</div>
+	<br><br><br><br>
+	<div class="grid-container">
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/NannoDisk.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Nanno Disk</span>
+			<a href="nannodisk.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$18.50<h5></span>
+			<button type="button" onclick="alert('Item Added To Cart')">Add to Cart</button>
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/TetraDisk.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Tetra Disk</span>
+			<a href="tetradisk.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$21.99<h5></span>
+			<button type="button" onclick="alert('Item Added To Cart')">Add to Cart</button>
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/HAF_4OZ.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Hydro Algal Filter f/2 4oz</span>
+			<a href="hydrofilterf2_4.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$11.88<h5></span>
+			<button type="button" onclick="alert('Item Added To Cart')">Add to Cart</button>
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/HAF_4OZ.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Hydro Algal Filter f/2 8oz</span>
+			<a href="hydrofilterf2_8.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$14.50<h5></span>
+			<button type="button" onclick="alert('Item Added To Cart')">Add to Cart</button>
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/HAF_4OZ.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Hydro Algal Filter f/2 16oz</span>
+			<a href="hydrofilterf2_16.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$20.75<h5></span>
+			<button type="button" onclick="alert('Item Added To Cart')">Add to Cart</button>
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/HAF_4OZ.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Hydro Algal Filter f/2 32oz</span>
+			<a href="hydrofilterf2_32.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$38.25<h5></span>
+			<button type="button" onclick="alert('Item Added To Cart')">Add to Cart</button>
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/LiveMarinePhyto_8oz.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Live Marine Phytoplankton 8oz</span>
+			<a href="livephytonanno_8.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$11.88<h5></span>
+			<button type="button" onclick="alert('Item Added To Cart')">Add to Cart</button>
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/LiveMarinePhyto_8oz.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Live Marine Phytoplankton 16oz</span>
+			<a href="livephytonanno_16.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$21.00<h5></span>
+			<button type="button" onclick="alert('Item Added To Cart')">Add to Cart</button>
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/LiveMarinePhyto_liter.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Live Marine Phytoplankton Liter</span>
+			<a href="livephytonanno_liter.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$23.75<h5></span>
+			<button type="button" onclick="alert('Item Added To Cart')">Add to Cart</button>
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/PhytoplanktonCultureKit.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Phytoplankton Culture Kit Nannochloropsis</span>
+			<a href="nanno_kit.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$21.25<h5></span>
+			<button type="button" onclick="alert('Item Added To Cart')">Add to Cart</button>
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/PhytoplanktonCultureKitTetra.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Phytoplankton Culture Kit Tetraslemis</span>
+			<a href="tetra_kithome.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$22.50<h5></span>
+			<button type="button" onclick="alert('Item Added To Cart')">Add to Cart</button>
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/ZooplanktonSieve_2in.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Zooplankton Sieve 2in</span>
+			<a href="sieve_2.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$11.50<h5></span>
+			<button type="button" onclick="alert('Item Added To Cart')">Add to Cart</button>
+		</div>
+		<div class="grid-item">
+			<div class="product-grid__img-wrapper">			
+				<img src="Products/ZooplanktonSieve_4in.png" alt="Img" height="200px" class="product-grid__img" />
+			</div>
+			<span class="product-grid__title">Zooplankton Sieve 4in</span>
+			<a href="sieve_4.html"><h6>Product Details</h6></a>
+			<span class="product-grid__price"><h5>$16.50<h5></span>
+			<button type="button" onclick="alert('Item Added To Cart')">Add to Cart</button>
+		</div>
+	</div>
+
+
+</body>
+</html> 

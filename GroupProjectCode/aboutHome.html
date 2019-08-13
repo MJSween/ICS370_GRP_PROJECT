@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>About Us</title>
+<br><br><br><br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<link rel="stylesheet" href="HomeStyle/homestyle.css">	
+	<style>
+	#logobar {
+		margin-top: 3px;
+		margin-right: 4px;
+		float: right;
+	}
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 75px;
+		width: 70%;
+
+	}
+		.paragraph {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+		
+	}
+		.backbutton{
+		float: left;
+		width: 10%;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+	</style>
+  </head>
+
+  <body id="logo">
+  <br><br><br><br>
+  <p class="paragraph">&nbsp; &nbsp; &nbsp; &nbsp; Mercer of Montana, LLC began in 2015, by three life-long reefkeeping enthusiasts that found information on 
+  phytoplankton benefits lacking or anecdotal at best. At Mercer of Montana, we excel at service to our customers. 
+  The quality of our products have earned acclaim by hobbyists and aquafarming professionals, as well as R&D of 
+  several corporations. 
+  <p class="paragraph">&nbsp; &nbsp; &nbsp; &nbsp;Many of our products have been used by scientific research facilities and in educational 
+  science settings. By leveraging our ability to offer our proven products to our customers without the excessive
+  overhead costs, we can assure you receive the highest quality product at the most competitive pricing.
+  Natural, aquacultured, live phytoplankton is the backbone of our product lineup. Phytoplankton is at the bottom 
+  of the oceans' food chain, and all living organism derive benefit from the role this organism plays.
+  <p class="paragraph">&nbsp; &nbsp; &nbsp; &nbsp; Our fresh, liquid phytoplankton is laboriously nutured at our aquaculturing facility in laboratory conditions, to provide our 
+  customers with the same primary feed nature intended for corals, filter feeding invertebrates, fish fry, and rotifer, 
+  copepod, artemia, and amphipod cultures. Mercer of Montana intitates all cultures through the use of a dense collection 
+  of isolated phytoplankton cells grown in a petri dish on nutrient agar, assuring only one type of microalgae is cultured, 
+  and allowing for more control over the yield. We offer these same sealed, cell-laden petri dishes for this purpose. 
+  For recurring and/or large quantities, please allow for additional preparation to ensure you receive cultures grown 
+  precisely to your requirements. 
+  <p class="paragraph">&nbsp; &nbsp; &nbsp; &nbsp;In addition, our microalgae culture kits provide an easy to use, all-in-one option for anyone learning aquaculture
+  or teaching scientific microalage inoculation/incubation. Our own Hydro Algal Fertilizer is also offered and 
+  formulated following the very popular Guillard f/2 protocols for a microalgae culture growth medium.
+
+</p>
+
+    <div class="navbar">
+		<a href="home.html">Home</a>
+		<a href="aboutHome.html" class="active">About Us</a>
+		<a href="productsHome.html">Products</a>
+		<a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+		<a href="signup.html">Sign Up</a>
+		<img id="logobar" src="MMLOGOWASH.png" style="width:120px;height:60px;"></img>
+	</div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="MMLOGOWASH.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<button class="backbutton" onclick="history.back()">Back</button>
+  </body>
+</html>
